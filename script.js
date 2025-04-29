@@ -46,7 +46,7 @@ function lancerJeu(){
     function gameLogic (){
 
         if (tentativeUt <= 1) {
-            setTimeout(() => window.location.href = "file:///C:/Users/PC/Desktop/Visual%20Studio%20Code/PROJETS%2012/JEUX/Devine/index.html",3000)
+            setTimeout(() => window.location.href = "index.html",3000)
             messageText = "Dommage tu a epuiser tes ressources, Recommence !"
             messagesUtIndice()
             return           
