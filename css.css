@@ -1,0 +1,65 @@
+html {
+    background-color: rgba(0, 0, 0, 0.747);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    font-family: "Press Start 2P", system-ui; 
+    font-size: 0.60em;
+    padding: 1em;
+    background-color: rgb(172, 171, 241);
+    border-radius: 5em;
+    height: 40vh; 
+    width: 75vh;   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0em 0em 5em black;
+}
+
+button {
+    font-family: "Press Start 2P", system-ui;   
+    margin: 1em; 
+    padding: 0.5em;   
+    box-shadow: 0em 0em 0.5em black;
+}
+
+input{
+    height: 2em;
+    width: 10em;
+    border-radius: 0.75em;
+    margin-bottom: 1.5em;   
+    text-align: center; 
+    border: 1px solid black
+}
+
+h2{ 
+   padding: 1em;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+/* Ajouter l'animation ici */
+
+.boom {
+   animation: boom 1s ease-in-out forwards;;
+}
+
+@keyframes boom {
+    0% {
+        transform: rotate(0deg); /* Commence à 0° */
+    }
+    50% {
+        transform: rotate(360deg); /* Finit à 360° */
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
