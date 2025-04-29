@@ -46,7 +46,7 @@ function lancerJeu(){
     function gameLogic (){
 
         if (tentativeUt <= 1) {
-            setTimeout(() => window.location.href = "index.html",3000)
+            setTimeout(() => window.location.href = "https://golo-glog.github.io/Plus-Moins/",3000)
             messageText = "Dommage tu a epuiser tes ressources, Recommence !"
             messagesUtIndice()
             return           
