@@ -46,7 +46,7 @@ function lancerJeu(){
 
         if (tentativeUt <= 1) {
             setTimeout(() => window.location.href = "https://golo-glog.github.io/Plus-Moins/",3000)
-            messageText = "Dommage tu a epuiser tes ressources, Recommence !"
+            messageText = "Dommage, tu as épuisé tes ressources. Recommence !"
             messagesUtIndice()
             return           
         }
@@ -54,20 +54,20 @@ function lancerJeu(){
         if (isNaN(input.value) || input.value == "") { 
 
             input.value = ""
-            messageText = `Ecris un Nombre ! Tentative restante : ${tentativeUt}`             
+            messageText = `Ecris un Nombre ! Tentatives restantes : ${tentativeUt}`             
 
         } else if (nombres < input.value) {
 
             tentativeUt --
             input.value = ""
-            messageText = `Plus Bas ! Tentative restante : ${tentativeUt}`
+            messageText = `Plus Bas ! Tentatives restantes : ${tentativeUt}`
 
 
         } else if (nombres > input.value){
             
             tentativeUt --
             input.value = ""
-            messageText = `Plus haut ! Tentative restante : ${tentativeUt}`  
+            messageText = `Plus haut ! Tentatives restantes : ${tentativeUt}`  
 
         } else { 
 
@@ -77,7 +77,7 @@ function lancerJeu(){
             messageBoom.classList.add("boom"); 
             affichageBoom.classList.add("boom")
             
-            messageText = "Bravo tu a réussi !"                
+            messageText = "Bravo, tu as réussi !"                
              
             
             affichageNombres()
